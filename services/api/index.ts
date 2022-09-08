@@ -9,7 +9,8 @@ const axiosInstance = axios.create({
   baseURL: baseUrl,
   headers: {
     'Access-Control-Allow-Origin': '*',
-    'Content-Type': 'application/json;'
+    'Content-Type': 'application/json;',
+    'Authorization': 'Bearer [token]'
   }
 });
 
