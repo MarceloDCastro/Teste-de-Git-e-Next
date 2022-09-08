@@ -1,14 +1,11 @@
-import { Typography } from '@mui/material'
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import { List, ListItem, Typography } from '@mui/material'
 import { Title } from '../components/Title'
-import styles from '../styles/Home.module.css'
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <>
-      <Title>Teste</Title>
+      <Title>Home</Title>
+      <Typography mt={3} fontWeight='bold'>Teste</Typography>
     </>
   )
 }
