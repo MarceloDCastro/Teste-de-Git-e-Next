@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <title>Teste de Git & Next</title>
         <link rel="icon" href="/icons/favicon.ico" />
       </Head>
-      <Typography>Teste</Typography>
+      <Typography component='h1'>Teste de Git e Next</Typography>
     </>
   )
 }
