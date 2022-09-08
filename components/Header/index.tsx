@@ -2,6 +2,7 @@ import React from 'react';
 import { Props } from 'next/script';
 import { AppBar, Box, Button, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import Link from 'next/link';
 
 const projectTitle = 'Teste de Git e Next';
 
@@ -22,7 +23,7 @@ export function Header (props: any) {
         setMobileOpen(!mobileOpen);
     };
 
-    const drawer = (
+    const drawerContent = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
           <Typography variant="h6" sx={{ my: 2 }}>
             {projectTitle}
@@ -32,7 +33,9 @@ export function Header (props: any) {
             {pages.map(({title, path}) => (
               <ListItem key={`${title}_${path}`} disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
-                  <ListItemText primary={title} />
+                    <Link href={path} key={`${title}_${path}`}>
+                        <ListItemText primary={title} />
+                    </Link>
                 </ListItemButton>
               </ListItem>
             ))}
@@ -62,9 +65,11 @@ export function Header (props: any) {
                 </Typography>
                 <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                     {pages.map(({ title, path }) => (
-                    <Button key={`${title}_${path}`} sx={{ color: '#fff' }}>
-                        {title}
-                    </Button>
+                        <Link href={path} key={`${title}_${path}`}>
+                            <Button sx={{ color: '#fff' }}>
+                                {title}
+                            </Button>
+                        </Link>
                     ))}
                 </Box>
                 </Toolbar>
@@ -83,7 +88,7 @@ export function Header (props: any) {
                     '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 250 },
                 }}
                 >
-                {drawer}
+                {drawerContent}
                 </Drawer>
             </Box>
         </>
