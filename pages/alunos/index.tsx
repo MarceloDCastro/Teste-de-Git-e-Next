@@ -1,10 +1,11 @@
-import { List, ListItem, Typography } from '@mui/material'
+import { List, ListItem, Typography, Button } from '@mui/material'
 import { AxiosResponse } from 'axios'
+import Link from 'next/link';
 import { Title } from '../../components/Title'
 import { api } from '../../services/api'
 
 interface IAluno {
-  id: number;
+  idAluno: number;
   nomeAluno: string;
   sisStatusMatricula: string;
 }
@@ -29,9 +30,12 @@ export default function Alunos({alunos}: {alunos: IAluno[]}){
       <Typography mt={3} fontWeight='bold'>Alunos by ServerSideProps</Typography>
       <List>
         {
-          alunos?.map(({id, nomeAluno, sisStatusMatricula}) => (
-            <ListItem key={id}>
+          alunos?.map(({idAluno, nomeAluno, sisStatusMatricula}) => (
+            <ListItem key={idAluno}>
               <Typography>{nomeAluno} | Matrícula {sisStatusMatricula}</Typography>
+              <Link href={`alunos/visualizar/${idAluno}`}>
+                <Button variant='contained' size='small' sx={{ ml: 2 }}>Visualizar</Button>
+              </Link>
             </ListItem>
           ))
         }
