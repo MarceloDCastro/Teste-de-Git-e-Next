@@ -10,6 +10,10 @@ const pages = [
     {
         title: 'Home',
         path: '/'
+    },
+    {
+        title: 'Alunos',
+        path: '/alunos'
     }
 ]
 
