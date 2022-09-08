@@ -7,13 +7,26 @@ interface ILayoutProps {
 }
 
 export function Layout ({ children }: ILayoutProps) {
+    const DefaultContainer = ({ children }: ILayoutProps) => (
+        <Box component='main' sx={{
+            width: '100%',
+            height: '100%'
+        }}>
+            {children}
+        </Box>
+    )
+
     return (
         <Box sx={{
             width: '100vw',
-            height: '100vh'
+            height: '100vh',
+            px: '3%',
+            pt: '80px'
         }}>
             <Header />
-            {children}
+            <DefaultContainer>
+                {children}
+            </DefaultContainer>
         </Box>
     )
 }

@@ -7,11 +7,7 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Teste de Git & Next</title>
-        <link rel="icon" href="/icons/favicon.ico" />
-      </Head>
-      <Typography component='h1'>Teste de Git e Next</Typography>
+      <Typography component='h1'>Testee</Typography>
     </>
   )
 }
