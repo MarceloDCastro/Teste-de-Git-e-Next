@@ -15,3 +15,4 @@ Branch 3 - 2º commit
 - Correção do Módulo Matrícula
 - Feature do Acadêmico
 - Bugfix do Acadêmico
+- Correção Urgente para o Financeiro
