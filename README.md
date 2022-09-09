@@ -13,6 +13,9 @@ Branch 3 - 2º commit
 - Develop Branch 2° Commit Rhuan
 - Develop Branch 3° Commit Rhuan
 - Correção do Módulo Matrícula
+- Feature do Acadêmico
+- Bugfix do Acadêmico
+- Correção Urgente para o Financeiro
 
 =========
 
