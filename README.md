@@ -16,3 +16,8 @@ Branch 3 - 2º commit
 - Feature do Acadêmico
 - Bugfix do Acadêmico
 - Correção Urgente para o Financeiro
+
+=========
+
+- carlos/fix
+  - primeiro commit
