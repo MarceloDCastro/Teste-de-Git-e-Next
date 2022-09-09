@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Teste de Git & Next só para baixinhos</title>
+        <title>Teste de Git & Next só para baixinhos 2</title>
         <link rel="icon" href="/icons/favicon.ico" />
       </Head>
       <Layout>
