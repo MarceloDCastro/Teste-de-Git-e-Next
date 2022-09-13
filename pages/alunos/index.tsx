@@ -25,7 +25,7 @@ export default function Alunos({alunos}: {alunos: IAluno[]}){
   console.log('alunos aqui: ',alunos)
   return (
     <>
-      <Title>Teste</Title>
+      <Title>Alunos</Title>
 
       <Typography mt={3} fontWeight='bold'>Alunos by ServerSideProps</Typography>
       <List>

@@ -14,6 +14,10 @@ const pages = [
     {
         title: 'Alunos',
         path: '/alunos'
+    },
+    {
+        title: 'Unidades',
+        path: '/unidades'
     }
 ]
 
