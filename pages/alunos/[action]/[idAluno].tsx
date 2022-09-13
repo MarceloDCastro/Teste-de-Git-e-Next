@@ -43,7 +43,7 @@ export default function Alunos({action, aluno, error}: IPageProps){
 
   return (
     <>
-      <Title>{`${action} aluno`}</Title>
+      <Title>{`${action} aluno by getServerSideProps`}</Title>
 
       <Stack direction='row' spacing={2} sx={{ flexWrap: 'wrap' }}>
         <TextField label='Id' value={aluno?.id} disabled />
